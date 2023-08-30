@@ -9,10 +9,16 @@
             content: "*" ;
             color: red;
         }
-        .page1{
-            background-image: url("p1.avif");
+        body{
+            background-image: url("p.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
+            height: 100%;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid black;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -20,148 +26,174 @@
     <div class="main">
         <form action="">
             <div class="page1">
-            <fieldset>
-            <legend>Personal Details</legend>
-            <label for="Salutation">Salutation</label>
-            <select name="" id="">
-                <option value="--None--">--None--</option>
-                <option value="Mr.">Mr.</option>
-                <option value="Ms.">Ms.</option>
-                <option value="Mrs.">Mrs.</option>
-            </select><br><br>
-            <label for="FName">First Name:</label>
-            <input type="text" id="" name=""><br><br>
-            <label for="LName">Last Name:</label>
-            <input type="text" id="" name=""><br><br>
-            <label for="Gender">Gender:</label>
-            <input type="radio" id="" name="">
-            <label for="Male">Male</label>
-            <input type="radio" id="" name="">
-            <label for="Female">Female</label><br><br>
-            <label for="Email">Email:</label>
-            <input type="email" id="" name=""><br><br>
-            <label for="DOB">Date of Birth:</label>
-            <input type="date"><br><br>
-            <label for="Address">Address:</label><br>
-            <textarea name="" id="" cols="30" rows="4"></textarea><br>
-            <button type="submit">Submit</button>
-        </fieldset><br>
-        </div>
-        <h3>Training Course Signup</h3>
-        <p>Sign-up for a training course using this form</p>
-        <label for="Title">Title</label><br>
-        <input type="text" size="50"><br><br>
-        <label for="Firstname" class="required" >Firstname</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <label for="Lastname" class="required">Lastname</label><br>
-        <input type="text" name="Firstname" id="Firstname" size="20"> &nbsp&nbsp<input type="text" name="Lastname" id="Lastname" size="20"><br><br>
-        <label for="Email" class="required">Email</label><br>
-        <input type="text" name="Email" id="Email" size="50"><br><br>
-        <label for="Phone" class="required">Phone</label><br>
-        <input type="tel" name="Phone" id="Phone" size="50"><br><br>
-        <label for="Company">Company</label><br>
-        <input type="text" name="Company" id="Company" size="50"><br><br>
-        <label for="Position">Position</label><br>
-        <input type="text" name="Position" id="Position" size="50"><br><br>
-        <label for="Address" class="required">Address</label><br>
-        <input type="text" name="Address" id="Address" size="50"><br><br>
-        <label for="City" class="required">City</label><br>
-        <input type="text" name="City" id="City" size="50"><br><br>
-        <label for="State Provision" class="required">State Provision</label><br>
-        <select name="State Provision" id="State Provision">
-            <option value="">select</option>
-            <option value="">TS</option>
-            <option value="">AP</option>
-        </select><br><br>
-        <label for="Country" class="required"> Country</label><br>
-        <select name="Country" id="Country">
-            <option value="select">select</option>
-            <option value="India">India</option>
-            <option value="Pakisthan">Pakisthan</option>
-            <option value="Afghanisthan">Afghanisthan</option>
-        </select><br><br>
-        <input type="Submit" name="" id="">
-        <h3><center>Application Form</center></h3>
-        <label for="Fname">Firstname</label>
-        <input type="text" name="" id="">&nbsp&nbsp
-        <label for="Lname">Lastname</label>
-        <input type="text" name="" id=""><br><br>
-        <label for="Date of birth">Date of Birth</label>
-        <input type="date" name="" id="">
-        <label for="Age">Age</label>
-        <input type="number" name="" id=""><br><br>
-        <label for="Gender">Gender</label>
-        <select name="Gender" id="">
-            <option value="Male">Male</option>
-            <option value="female">female</option>
-        </select>
-        <label for="Email Address">Email Address</label>
-        <input type="email" name="" id="" placeholder="Email Address"><br><br>
-        <label for="Position available">Position available:</label>
-        <input type="radio" name="" id="">
-        <label for="Junior Developer">Junior Developer</label>
-        <input type="radio" name="" id="">
-        <label for="Mid-level Developer">Mid-level Developer</label>
-        <input type="radio" name="" id="">
-        <label for="Senior Developer">Senior Developer</label><br><br>
-        <label for="Programming Languages">Programming Languages:</label>
-        <input type="checkbox" name="" id="">
-        <label for="C">C</label>
-        <input type="checkbox" name="" id="">
-        <label for="Python">Python</label>
-        <input type="checkbox" name="" id="">
-        <label for="Java">Java</label>
-        <input type="checkbox" name="" id="">
-        <label for="HTMl">Html</label><br><br>
-        <label for="Password">Password:</label>
-        <input type="password" name="" id="">
-        <label for="Confirm Password">Confirm Password:</label>
-        <input type="password" name="" id=""><br><br>
-        <input type="submit" name="" id="">
-        <input type="Reset" name="" id=""><br><br>
-        <fieldset>
-            <legend>Login Details</legend>
-            <label for="Name">Name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text" name="" id=""><br><br>
-            <label for="Email">Email:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="Email" name="" id=""><br><br>
-            <label for="Password">Password:</label>&nbsp&nbsp
-            <input type="Password" name="" id=""><br><br>
-            <input type="Submit" name="" id="">
-        </fieldset><br>
-        <fieldset>
-            <legend>Your Feedback</legend>
-            <p>Please check all the conditions that apply to you</p>
-            <input type="checkbox" name="" id="">
-            <label for="Angry">Angry</label><br><br>
-            <input type="checkbox" name="" id="">
-            <label for="Sad">Sad</label><br><br>
-            <input type="checkbox" name="" id="">
-            <label for="Happy">Happy</label><br><br>
-            <input type="checkbox" name="" id="">
-            <label for="Ambivalent">Ambivalent</label>
-            <p>How satisfied were you with our service?</p>
-            <input type="radio" name="" id="">
-            <label for="Very satisfied">Very satisfied</label>
-        </fieldset>
-        <h2><center>Contact Us</center></h2>
-        <label for="Name" class="required">Name :</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="text" name="" id=""><br><br>
-        <label for="Phone No">Phone No :</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="tel" name="" id=""><br><br>
-        <label for="Email address" class="required">Email address :</label>
-        <input type="email" name="" id=""><br><br>
-        <label for="Comments" class="required">Comments:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <textarea name="" id="" cols="30" rows="5"></textarea><br><br>
-        <label for="required fields" class="required">required fields</label>&nbsp&nbsp&nbsp
-        <input type="Submit" value="Submit"><br><br>
-        <center>
-        <label for="Email">Email:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="text" name="" id=""><br><br>
-        <label for="Password">Password:</label>
-        <input type="text"><br><br>
-        <button>Login</button>
-        </center>
-    </form>
+                <fieldset>
+                    <legend><b>Personal Details</b></legend>
+                    <label for="Salutation">Salutation</label>
+                    <select name="" id="">
+                        <option value="--None--">--None--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select><br><br>
+                    <label for="FName">First Name:</label>
+                    <input type="text" id="" name=""><br><br>
+                    <label for="LName">Last Name:</label>
+                    <input type="text" id="" name=""><br><br>
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" id="" name="">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="" name="">
+                    <label for="Female">Female</label><br><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="" name=""><br><br>
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date"><br><br>
+                    <label for="Address">Address:</label><br>
+                    <textarea name="" id="" cols="30" rows="4"></textarea><br>
+                    <button type="submit">Submit</button>
+                </fieldset><br>
+            </div>
+            <hr style="color: black;">
+            <div class="page2">
+                <h3>Training Course Signup</h3>
+                <p>Sign-up for a training course using this form</p>
+                <label for="Title">Title</label><br>
+                <input type="text" size="50"><br><br>
+                <label for="Firstname" class="required" >Firstname</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label for="Lastname" class="required">Lastname</label><br>
+                <input type="text" name="Firstname" id="Firstname" size="20"> &nbsp&nbsp<input type="text" name="Lastname" id="Lastname" size="20"><br><br>
+                <label for="Email" class="required">Email</label><br>
+                <input type="text" name="Email" id="Email" size="50"><br><br>
+                <label for="Phone" class="required">Phone</label><br>
+                <input type="tel" name="Phone" id="Phone" size="50"><br><br>
+                <label for="Company">Company</label><br>
+                <input type="text" name="Company" id="Company" size="50"><br><br>
+                <label for="Position">Position</label><br>
+                <input type="text" name="Position" id="Position" size="50"><br><br>
+                <label for="Address" class="required">Address</label><br>
+                <input type="text" name="Address" id="Address" size="50"><br><br>
+                <label for="City" class="required">City</label><br>
+                <input type="text" name="City" id="City" size="50"><br><br>
+                <label for="State Provision" class="required">State Provision</label><br>
+                <select name="State Provision" id="State Provision">
+                    <option value="">select</option>
+                    <option value="">TS</option>
+                    <option value="">AP</option>
+                </select><br><br>
+                <label for="Country" class="required"> Country</label><br>
+                <select name="Country" id="Country">
+                    <option value="select">select</option>
+                    <option value="India">India</option>
+                    <option value="Pakisthan">Pakisthan</option>
+                    <option value="Afghanisthan">Afghanisthan</option>
+                </select><br><br>
+                <input type="Submit" name="" id="">
+            </div>
+            <hr>
+            <div class="page3">
+                <h3><center>Application Form</center></h3>
+                <label for="Fname">Firstname</label>
+                <input type="text" name="" id="">&nbsp&nbsp
+                <label for="Lname">Lastname</label>
+                <input type="text" name="" id=""><br><br>
+                <label for="Date of birth">Date of Birth</label>
+                <input type="date" name="" id="">
+                <label for="Age">Age</label>
+                <input type="number" name="" id=""><br><br>
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="">
+                    <option value="Male">Male</option>
+                    <option value="female">female</option>
+                </select>
+                <label for="Email Address">Email Address</label>
+                <input type="email" name="" id="" placeholder="Email Address"><br><br>
+                <label for="Position available">Position available:</label>
+                <input type="radio" name="" id="">
+                <label for="Junior Developer">Junior Developer</label>
+                <input type="radio" name="" id="">
+                <label for="Mid-level Developer">Mid-level Developer</label>
+                <input type="radio" name="" id="">
+                <label for="Senior Developer">Senior Developer</label><br><br>
+                <label for="Programming Languages">Programming Languages:</label>
+                <input type="checkbox" name="" id="">
+                <label for="C">C</label>
+                <input type="checkbox" name="" id="">
+                <label for="Python">Python</label>
+                <input type="checkbox" name="" id="">
+                <label for="Java">Java</label>
+                <input type="checkbox" name="" id="">
+                <label for="HTMl">Html</label><br><br>
+                <label for="Password">Password:</label>
+                <input type="password" name="" id="">
+                <label for="Confirm Password">Confirm Password:</label>
+                <input type="password" name="" id=""><br><br>
+                <input type="submit" name="" id="">
+                <input type="Reset" name="" id=""><br><br>
+            </div>
+            <hr>
+            <div class="page4">
+                <fieldset>
+                    <legend>Login Details</legend>
+                    <label for="Name">Name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="text" name="" id=""><br><br>
+                    <label for="Email">Email:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="Email" name="" id=""><br><br>
+                    <label for="Password">Password:</label>&nbsp&nbsp
+                    <input type="Password" name="" id=""><br><br>
+                    <input type="Submit" name="" id="">
+                </fieldset><br>
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <p>Please check all the conditions that apply to you</p>
+                    <input type="checkbox" name="" id="">
+                    <label for="Angry">Angry</label><br><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="Sad">Sad</label><br><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="Happy">Happy</label><br><br><input type="checkbox" name="" id="">
+                    <label for="Ambivalent">Ambivalent</label>
+                    <p>How satisfied were you with our service?</p>
+                    <input type="radio" name="" id="">
+                    <label for="Very satisfied">Very satisfied</label>\
+                </fieldset>
+            </div>
+            <hr>
+            <div class="page5">
+                <h2><center>Contact Us</center></h2>
+                <label for="Name" class="required">Name :</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="" id=""><br><br>
+                <label for="Phone No">Phone No :</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="tel" name="" id=""><br><br>
+                <label for="Email address" class="required">Email address :</label>
+                <input type="email" name="" id=""><br><br>
+                <label for="Comments" class="required">Comments:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea name="" id="" cols="30" rows="5"></textarea><br><br>
+                <label for="required fields" class="required">required fields</label>&nbsp&nbsp&nbsp
+                <input type="Submit" value="Submit"><br><br>
+            </div>
+            <hr>
+            <div class="page6">
+                <center>
+                    <label for="Email">Email:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="text" name="" id=""><br><br>
+                    <label for="Password">Password:</label>
+                    <input type="text"><br><br>
+                    <button>Login</button>
+                </center>
+            </div>
+            <hr>
+            <div class="page7">
+                <center>
+                    <fieldset>
+                        <h2>LOGIN</h2>
+                        <label for="Login">Login</label><br>
+                        <input type="text" name="Login" id="Login"><br><br>
+                        <label for="Password">Password</label><br>
+                        <input type="password" name="Password" id="Password"><br><br>
+                        <button>Log In</button>
+                    </fieldset>
+                </center>
+            </div>
+        </form>
     </div>
 </body>
 </html>
