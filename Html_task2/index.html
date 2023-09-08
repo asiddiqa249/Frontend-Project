@@ -12,6 +12,14 @@
             border-radius: 10px;
             border-color: black;
         }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .image {
+            margin-right: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -19,14 +27,36 @@
         <h1><center>RESTAURANT APP</center></h1>
         <fieldset>
             <h2><center>Hamzah</center></h2>
-            <img src="./veg.jpeg" alt="" width="180p" height="125">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="./strtes1.jpeg" alt="" width="180p" height="125">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="./nveg.jpeg" alt="" width="200p" height="125">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="./nveg1.jpg" alt="" width="180p" height="125p" align="right">
-            <img src="./veg1.jpeg" alt="" width="180p" height="125p">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="./strtes2.jpeg" alt="" width="200p" height="125">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="./nveg2.jpeg" alt="" width="200p" height="125">
-            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Pasta</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Veg Starter</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Non-veg Biryani</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Veg Biryani</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Momos</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Fish fry</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Chicken Soup</b></p>
+            <div class="container">
+                <div class="image">
+                    <img src="./veg.jpeg" alt="image 1" width="200" height="125">
+                    <p> <b>Pasta</b></p>
+                </div>
+                <div class="image">
+                    <img src="./strtes1.jpeg" alt="image 2" width="200" height="125">
+                    <p><b>Veg-Starter</b></p>
+                </div>
+                <div class="image">
+                    <img src="./nveg.jpeg" alt="image 3" width="200" height="125">
+                    <p><b>Non-Veg Biryani</b></p>
+                </div>
+                <div class="image">
+                    <img src="./veg1.jpeg" alt="image 4" width="200" height="125">
+                    <p><b>Biryani</b></p>
+                </div>
+                <div class="image">
+                    <img src="./strtes2.jpeg" alt="image 5" width="200" height="125">
+                    <p><b>Momos</b></p>
+                </div>
+                <div class="image">
+                    <img src="./nveg2.jpeg" alt="image 6" width="200" height="125">
+                    <p><b>Fish fry</b></p>
+                </div>
+                <div class="image">
+                    <img src="./nveg1.jpg" alt="image 7" width="200" height="125">
+                    <p><b>Chicken soup</b></p>
+                </div>
+            </div>
             <h2>Description of Restaurant in paragraph:</h2>
             <p>A restaurant is a business that prepares and serves food and drinks to customers.Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.Early eating establishments recognizable as restaurants in the modern sense emerged in Song dynasty China during the 11th and 12th centuries. In large cities, such as Kaifeng and Hangzhou, food catering establishments catered to merchants who travelled between cities. Probably growing out of tea houses and taverns which catered to travellers, Kaifeng's restaurants blossomed into an industry that catered to locals as well as people from other regions of China. As travelling merchants were not used to the local cuisine of other cities, these establishments were set up to serve dishes familiar to merchants from other parts of China. Such establishments were located in the entertainment districts of major cities, alongside hotels, bars, and brothels.</p>
             <h2>Menu</h2>
@@ -42,24 +72,20 @@
             <label for="">Veg</label>
             <input type="radio" name="" id="">
             <label for="">Non-veg</label><br><br>
-            <details>
-                <summary>
-                    Starters
-                </summary>
-                    <ul>
-                        <li>Momos</li>
-                        <li>Noodles</li>
-                        <li>Chicken65</li>
-                        <li>Manchuriyan</li>
-                    </ul>
-            </details>
+            <label for="">Starters:</label>
+            <select name="" id="Starters"> 
+                <option value="Momos">Momos</option>
+                <option value="Noodles">Noodles</option>
+                <option value="Chicken65">Chicken65</option>
+                <option value="Manchuriyan">Manchuriyan</option>
+            </select> 
             <h2 style="text-align: center;">Feedback Form</h2>
             <label for="">Queries:</label><br>
             <textarea name="" id="" cols="30" rows="5"></textarea><br>
             <label for="">Feedback:</label><br>
             <textarea name="" id="" cols="30" rows="5"></textarea>
             <footer>
-                <p style="text-align: center;">&copy;Hamzah.</p>
+                <p style="text-align: center;">&copy;2023 Hamzah.</p>
             </footer>
         </fieldset>
     </div>
