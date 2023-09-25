@@ -18,7 +18,40 @@
         }
         .image {
             margin-right: 10px;
+            text-align: center;
         }
+        button{
+            margin-left: 150px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(198, 70, 168);
+            border: 2px solid black;
+        }
+        textarea:hover{
+            background-color: red;
+            border-width: 2px;
+            border-color: black;
+            border-style: inset;
+        }
+        select:hover{
+            background-color: blueviolet;
+        }
+        .querybox{
+            margin: 0;
+            background-color: pink;
+            padding: 10px;
+            border: 2px solid black;
+            width: 300px;
+            height: 250px;
+            position: sticky;
+            top:0;
+            left:70%;
+        }
+        #left{
+            text-align:end ;
+        }
+        
     </style>
 </head>
 <body>
@@ -29,7 +62,7 @@
             <div class="container">
                 <div class="image">
                     <img src="./veg.jpeg" alt="image 1" width="200" height="125">
-                    <p> <b>Pasta</b></p>
+                    <p><b>Pasta</b></p>
                 </div>
                 <div class="image">
                     <img src="./strtes1.jpeg" alt="image 2" width="200" height="125">
@@ -61,6 +94,15 @@
             <h2>Menu</h2>
             <a href="./menu.jpg" download><img src="./menu.jpg" alt="" width="300"height="400"></a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7610.364853227156!2d78.389981!3d17.498803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a8dcb76371%3A0x779cd37af96408a0!2sMehfil%20Restaurant!5e0!3m2!1sen!2sin!4v1693923050294!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"align="right"></iframe>
+            <div class="querybox">
+                <h2 style="background-color: aliceblue;"><center>Query Box</center></h2>
+                <p>Hi</p>
+                <p id="left">Hello</p>
+                <p>How can i help you?</p>
+                <p id="left">No Thanks..</p>
+                <input type="text" name="text box" id="" placeholder="Text here..." size="30px">
+                <input type="button" value="Send" style="border-radius: 5px;">
+            </div>
             <h2><center>Registration form for Restaurant</center></h2>
             <label for="">Name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <input type="text" name="" id=""><br><br>
@@ -73,18 +115,25 @@
             <label for="">Non-veg</label><br><br>
             <label for="">Starters:</label>
             <select name="" id="Starters"> 
+                <option value="Select">Select</option>
                 <option value="Momos">Momos</option>
                 <option value="Noodles">Noodles</option>
                 <option value="Chicken65">Chicken65</option>
                 <option value="Manchuriyan">Manchuriyan</option>
-            </select>
+            </select><br><br>
+            <div id="submit">
+                <button type="submit">Submit</button>
+            </div> 
             <h2 style="text-align: center;">Feedback Form</h2>
             <label for="">Queries:</label><br>
             <textarea name="" id="" cols="30" rows="5"></textarea><br>
             <label for="">Feedback:</label><br>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <textarea name="" id="" cols="30" rows="5"></textarea><br><br>
+            <div id="submit">
+                <button type="submit">Submit</button>
+            </div>
             <footer>
-                <p style="text-align: center;">&copy;Hamzah.</p>
+                <p style="text-align: center;">&copy;2023 Hamzah. All rights preserved.</p>
             </footer>
         </fieldset>
     </div>
